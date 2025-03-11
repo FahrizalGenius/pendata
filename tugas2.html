@@ -378,22 +378,22 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-outlier-deteksi"><strong>Penjelasan Outlier Deteksi</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding"><strong>Deteksi Outlier dengan K-Nearest Neighbors (KNN) dalam Data Understanding</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-outlier-dalam-data-understanding">1. Pengantar Outlier dalam Data Understanding</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier">2. Konsep K-Nearest Neighbors (KNN) dalam Deteksi Outlier</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-perhitungan-k">3 . Pengertian Perhitungan K</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kapan-menggunakan-knn-untuk-deteksi-outlier">Kapan Menggunakan KNN untuk Deteksi Outlier?</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-data-koneksi-database">Analisis Data &amp; Koneksi Database</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari PostgreSQL ke DataFrame Pandas dengan code di bawah ini</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari MySQL ke DataFrame Pandas dengan code di bawah ini</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lof-local-outlier-factor">LOF (Local Outlier Factor)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bagaimana-langkah-lof">BAGAIMANA LANGKAH LOF</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-menghitung-manual-lof">CONTOH MENGHITUNG MANUAL LOF</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-menggunakan-sklern">IMPLEMENTASI MENGGUNAKAN SKLERN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-outlier-deteksi"><strong>Penjelasan Outlier Deteksi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding"><strong>Deteksi Outlier dengan K-Nearest Neighbors (KNN) dalam Data Understanding</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-outlier-dalam-data-understanding">1. Pengantar Outlier dalam Data Understanding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier">2. Konsep K-Nearest Neighbors (KNN) dalam Deteksi Outlier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-perhitungan-k">3 . Pengertian Perhitungan K</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kapan-menggunakan-knn-untuk-deteksi-outlier">Kapan Menggunakan KNN untuk Deteksi Outlier?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-data-koneksi-database">Analisis Data &amp; Koneksi Database</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari PostgreSQL ke DataFrame Pandas dengan code di bawah ini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari MySQL ke DataFrame Pandas dengan code di bawah ini</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lof-local-outlier-factor">LOF (Local Outlier Factor)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bagaimana-langkah-lof">BAGAIMANA LANGKAH LOF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-menghitung-manual-lof">CONTOH MENGHITUNG MANUAL LOF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-menggunakan-sklern">IMPLEMENTASI MENGGUNAKAN SKLERN</a></li>
 </ul>
 </li>
 </ul>
@@ -411,21 +411,22 @@ document.write(`
 <h1><strong>Tugas 2 data_understanding</strong><a class="headerlink" href="#tugas-2-data-understanding" title="Link to this heading">#</a></h1>
 <section id="penjelasan-outlier-deteksi">
 <h2><strong>Penjelasan Outlier Deteksi</strong><a class="headerlink" href="#penjelasan-outlier-deteksi" title="Link to this heading">#</a></h2>
+</section>
 <section id="deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding">
-<h3><strong>Deteksi Outlier dengan K-Nearest Neighbors (KNN) dalam Data Understanding</strong><a class="headerlink" href="#deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding" title="Link to this heading">#</a></h3>
+<h2><strong>Deteksi Outlier dengan K-Nearest Neighbors (KNN) dalam Data Understanding</strong><a class="headerlink" href="#deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding" title="Link to this heading">#</a></h2>
 <section id="pengantar-outlier-dalam-data-understanding">
-<h4>1. Pengantar Outlier dalam Data Understanding<a class="headerlink" href="#pengantar-outlier-dalam-data-understanding" title="Link to this heading">#</a></h4>
+<h3>1. Pengantar Outlier dalam Data Understanding<a class="headerlink" href="#pengantar-outlier-dalam-data-understanding" title="Link to this heading">#</a></h3>
 <p>Outlier adalah data yang memiliki nilai ekstrem yang berbeda secara signifikan dari sebagian besar data dalam suatu dataset. Outlier dapat terjadi karena kesalahan pengukuran, anomali sistem, atau fenomena yang memang tidak biasa. Dalam proses Data Understanding, mendeteksi outlier sangat penting untuk memastikan bahwa analisis data dan model yang digunakan tidak dipengaruhi oleh nilai-nilai ekstrem yang dapat menyebabkan hasil yang bias atau tidak akurat.</p>
 </section>
 <section id="konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier">
-<h4>2. Konsep K-Nearest Neighbors (KNN) dalam Deteksi Outlier<a class="headerlink" href="#konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier" title="Link to this heading">#</a></h4>
+<h3>2. Konsep K-Nearest Neighbors (KNN) dalam Deteksi Outlier<a class="headerlink" href="#konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier" title="Link to this heading">#</a></h3>
 <p>Metode KNN untuk deteksi outlier bekerja berdasarkan prinsip bahwa:</p>
 <p>Data normal cenderung memiliki tetangga yang lebih dekat karena mereka berada dalam kelompok yang lebih padat.
 Outlier memiliki tetangga yang jauh karena mereka berbeda dari sebagian besar data lain dalam dataset.
 Pendekatan yang umum digunakan dalam KNN untuk deteksi outlier melibatkan pengukuran jarak rata-rata ke k-tetangga terdekat dan menentukan apakah suatu titik data berada dalam distribusi normal atau tidak.</p>
 </section>
 <section id="pengertian-perhitungan-k">
-<h4>3 . Pengertian Perhitungan K<a class="headerlink" href="#pengertian-perhitungan-k" title="Link to this heading">#</a></h4>
+<h3>3 . Pengertian Perhitungan K<a class="headerlink" href="#pengertian-perhitungan-k" title="Link to this heading">#</a></h3>
 <p>Perhitungan K mengacu pada proses menentukan nilai K dalam berbagai konteks, tergantung pada bidang yang dibahas. Secara umum, K sering kali merepresentasikan jumlah, konstanta, atau parameter penting dalam suatu perhitungan atau algoritma.</p>
 <p>Contoh penerapannya:</p>
 <ul class="simple">
@@ -442,13 +443,13 @@ K sering digunakan untuk menyatakan jumlah elemen dalam kombinasi atau permutasi
 </ul>
 </section>
 <section id="kapan-menggunakan-knn-untuk-deteksi-outlier">
-<h4>Kapan Menggunakan KNN untuk Deteksi Outlier?<a class="headerlink" href="#kapan-menggunakan-knn-untuk-deteksi-outlier" title="Link to this heading">#</a></h4>
+<h3>Kapan Menggunakan KNN untuk Deteksi Outlier?<a class="headerlink" href="#kapan-menggunakan-knn-untuk-deteksi-outlier" title="Link to this heading">#</a></h3>
 <p>Data Berdimensi Tinggi: KNN bekerja cukup baik pada data berdimensi tinggi.</p>
 <p>Data Tanpa Distribusi Tertentu: Tidak bergantung pada asumsi distribusi normal.</p>
 <p>Jumlah Data yang Tidak Terlalu Besar: Karena KNN bisa lambat untuk dataset yang sangat besar (karena menghitung jarak berpasangan).</p>
 </section>
 <section id="kesimpulan">
-<h4>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h4>
+<h3>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h3>
 <p>K-Nearest Neighbors (KNN) adalah metode berbasis jarak yang dapat digunakan untuk deteksi outlier dengan mengukur jarak rata-rata ke K tetangga terdekat.
 KNN dapat mengidentifikasi titik yang memiliki jarak lebih besar dibandingkan sebagian besar data lain sebagai outlier.
 Teknik ini sangat berguna dalam Data Understanding, terutama sebelum pemodelan data untuk memastikan kualitas data yang lebih baik.
@@ -485,7 +486,7 @@ Namun, metode ini dapat menjadi mahal secara komputasi untuk dataset besar dan m
 </div>
 </section>
 <section id="analisis-data-koneksi-database">
-<h4>Analisis Data &amp; Koneksi Database<a class="headerlink" href="#analisis-data-koneksi-database" title="Link to this heading">#</a></h4>
+<h3>Analisis Data &amp; Koneksi Database<a class="headerlink" href="#analisis-data-koneksi-database" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">psycopg2</span>
@@ -502,7 +503,7 @@ Namun, metode ini dapat menjadi mahal secara komputasi untuk dataset besar dan m
 </div>
 </section>
 <section id="mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini">
-<h4>Mengambil Data dari PostgreSQL ke DataFrame Pandas dengan code di bawah ini<a class="headerlink" href="#mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini" title="Link to this heading">#</a></h4>
+<h3>Mengambil Data dari PostgreSQL ke DataFrame Pandas dengan code di bawah ini<a class="headerlink" href="#mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_pg_data</span><span class="p">():</span>
@@ -526,7 +527,7 @@ Namun, metode ini dapat menjadi mahal secara komputasi untuk dataset besar dan m
 </div>
 </section>
 <section id="mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini">
-<h4>Mengambil Data dari MySQL ke DataFrame Pandas dengan code di bawah ini<a class="headerlink" href="#mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini" title="Link to this heading">#</a></h4>
+<h3>Mengambil Data dari MySQL ke DataFrame Pandas dengan code di bawah ini<a class="headerlink" href="#mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">get_mysql_data</span><span class="p">():</span>
@@ -963,12 +964,12 @@ Namun, metode ini dapat menjadi mahal secara komputasi untuk dataset besar dan m
 </div>
 </div>
 </section>
-<section id="lof-local-outlier-factor">
-<h4>LOF (Local Outlier Factor)<a class="headerlink" href="#lof-local-outlier-factor" title="Link to this heading">#</a></h4>
-<p>Local Outlier Factor (LOF) adalah sebuah algoritma yang digunakan untuk mendeteksi outlier atau data yang menyimpang dalam suatu dataset. Algoritma ini bekerja dengan mengukur kepadatan lokal di sekitar sebuah titik data, lalu membandingkannya dengan kepadatan tetangga-tetangganya. Jika suatu titik memiliki kepadatan yang jauh lebih rendah dibandingkan dengan titik-titik di sekitarnya, maka titik tersebut cenderung dianggap sebagai outlier. Prosesnya dimulai dengan menentukan jumlah tetangga terdekat (K), menghitung jarak ke tetangga-tetangga tersebut, dan kemudian menghitung faktor LOF berdasarkan rasio kepadatan lokal. Nilai LOF sekitar 1 menunjukkan titik normal, sedangkan nilai yang jauh lebih besar dari 1 mengindikasikan kemungkinan outlier. LOF sangat berguna dalam mendeteksi anomali pada data yang memiliki kepadatan tidak merata, seperti transaksi keuangan yang mencurigakan atau pola serangan siber yang jarang terjadi. Meski akurat, algoritma ini bisa menjadi lambat pada dataset besar dan sensitif terhadap pemilihan parameter K. Namun, fleksibilitas dan kemampuannya untuk mendeteksi outlier secara kontekstual menjadikannya alat yang kuat untuk analisis data.</p>
 </section>
+<section id="lof-local-outlier-factor">
+<h2>LOF (Local Outlier Factor)<a class="headerlink" href="#lof-local-outlier-factor" title="Link to this heading">#</a></h2>
+<p>Local Outlier Factor (LOF) adalah sebuah algoritma yang digunakan untuk mendeteksi outlier atau data yang menyimpang dalam suatu dataset. Algoritma ini bekerja dengan mengukur kepadatan lokal di sekitar sebuah titik data, lalu membandingkannya dengan kepadatan tetangga-tetangganya. Jika suatu titik memiliki kepadatan yang jauh lebih rendah dibandingkan dengan titik-titik di sekitarnya, maka titik tersebut cenderung dianggap sebagai outlier. Prosesnya dimulai dengan menentukan jumlah tetangga terdekat (K), menghitung jarak ke tetangga-tetangga tersebut, dan kemudian menghitung faktor LOF berdasarkan rasio kepadatan lokal. Nilai LOF sekitar 1 menunjukkan titik normal, sedangkan nilai yang jauh lebih besar dari 1 mengindikasikan kemungkinan outlier. LOF sangat berguna dalam mendeteksi anomali pada data yang memiliki kepadatan tidak merata, seperti transaksi keuangan yang mencurigakan atau pola serangan siber yang jarang terjadi. Meski akurat, algoritma ini bisa menjadi lambat pada dataset besar dan sensitif terhadap pemilihan parameter K. Namun, fleksibilitas dan kemampuannya untuk mendeteksi outlier secara kontekstual menjadikannya alat yang kuat untuk analisis data.</p>
 <section id="bagaimana-langkah-lof">
-<h4>BAGAIMANA LANGKAH LOF<a class="headerlink" href="#bagaimana-langkah-lof" title="Link to this heading">#</a></h4>
+<h3>BAGAIMANA LANGKAH LOF<a class="headerlink" href="#bagaimana-langkah-lof" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Tentukan Parameter</p></li>
 </ol>
@@ -1019,7 +1020,7 @@ $<span class="math notranslate nohighlight">\(reach-dist k(A,B)=max(distance(A,B
 </ul>
 </section>
 <section id="contoh-menghitung-manual-lof">
-<h4>CONTOH MENGHITUNG MANUAL LOF<a class="headerlink" href="#contoh-menghitung-manual-lof" title="Link to this heading">#</a></h4>
+<h3>CONTOH MENGHITUNG MANUAL LOF<a class="headerlink" href="#contoh-menghitung-manual-lof" title="Link to this heading">#</a></h3>
 <p>Misal kita punya 4 titik data 2 dimensi:</p>
 <div class="math notranslate nohighlight">
 \[A(1,1),B(1,2),C(2,2),D(8,8) \]</div>
@@ -1059,7 +1060,7 @@ $<span class="math notranslate nohighlight">\(reach-dist k(A,B)=max(distance(A,B
 <p>LOF <span class="math notranslate nohighlight">\((A, B, C) \approx 1 \rightarrow\)</span> Normal Points</p>
 </section>
 <section id="implementasi-menggunakan-sklern">
-<h4>IMPLEMENTASI MENGGUNAKAN SKLERN<a class="headerlink" href="#implementasi-menggunakan-sklern" title="Link to this heading">#</a></h4>
+<h3>IMPLEMENTASI MENGGUNAKAN SKLERN<a class="headerlink" href="#implementasi-menggunakan-sklern" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1275,7 +1276,6 @@ $<span class="math notranslate nohighlight">\(reach-dist k(A,B)=max(distance(A,B
 </section>
 </section>
 </section>
-</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1332,22 +1332,22 @@ $<span class="math notranslate nohighlight">\(reach-dist k(A,B)=max(distance(A,B
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-outlier-deteksi"><strong>Penjelasan Outlier Deteksi</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding"><strong>Deteksi Outlier dengan K-Nearest Neighbors (KNN) dalam Data Understanding</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-outlier-dalam-data-understanding">1. Pengantar Outlier dalam Data Understanding</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier">2. Konsep K-Nearest Neighbors (KNN) dalam Deteksi Outlier</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-perhitungan-k">3 . Pengertian Perhitungan K</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kapan-menggunakan-knn-untuk-deteksi-outlier">Kapan Menggunakan KNN untuk Deteksi Outlier?</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-data-koneksi-database">Analisis Data &amp; Koneksi Database</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari PostgreSQL ke DataFrame Pandas dengan code di bawah ini</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari MySQL ke DataFrame Pandas dengan code di bawah ini</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#lof-local-outlier-factor">LOF (Local Outlier Factor)</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#bagaimana-langkah-lof">BAGAIMANA LANGKAH LOF</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-menghitung-manual-lof">CONTOH MENGHITUNG MANUAL LOF</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-menggunakan-sklern">IMPLEMENTASI MENGGUNAKAN SKLERN</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan-outlier-deteksi"><strong>Penjelasan Outlier Deteksi</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deteksi-outlier-dengan-k-nearest-neighbors-knn-dalam-data-understanding"><strong>Deteksi Outlier dengan K-Nearest Neighbors (KNN) dalam Data Understanding</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengantar-outlier-dalam-data-understanding">1. Pengantar Outlier dalam Data Understanding</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#konsep-k-nearest-neighbors-knn-dalam-deteksi-outlier">2. Konsep K-Nearest Neighbors (KNN) dalam Deteksi Outlier</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pengertian-perhitungan-k">3 . Pengertian Perhitungan K</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kapan-menggunakan-knn-untuk-deteksi-outlier">Kapan Menggunakan KNN untuk Deteksi Outlier?</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analisis-data-koneksi-database">Analisis Data &amp; Koneksi Database</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-postgresql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari PostgreSQL ke DataFrame Pandas dengan code di bawah ini</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#mengambil-data-dari-mysql-ke-dataframe-pandas-dengan-code-di-bawah-ini">Mengambil Data dari MySQL ke DataFrame Pandas dengan code di bawah ini</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lof-local-outlier-factor">LOF (Local Outlier Factor)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bagaimana-langkah-lof">BAGAIMANA LANGKAH LOF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-menghitung-manual-lof">CONTOH MENGHITUNG MANUAL LOF</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-menggunakan-sklern">IMPLEMENTASI MENGGUNAKAN SKLERN</a></li>
 </ul>
 </li>
 </ul>
